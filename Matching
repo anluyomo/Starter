@@ -1,0 +1,10 @@
+for c in config:
+               if c is not None:
+                        return rotate(deck[c[0]],c[1])
+                else:
+                        return None
+               
+               ## I want to know, if it is the same like this one under:
+               
+               return [rotate(deck[c[0]], c[1]) if c is not None else None for c in config]
+               
